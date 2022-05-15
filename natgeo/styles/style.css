@@ -1,0 +1,465 @@
+/*global*/
+:root{
+        --primary: #ffcc00;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+h3{
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.read-btn{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin-top: 15px;
+}
+/*utility*/
+
+
+
+/*menu*/
+
+nav.menu{
+    display: flex;
+    justify-content: space-between;
+    height: 43px;
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+    font-size: 14pxs;
+}
+
+nav.menu img{
+    height: 30px;
+    padding-left: 20px;
+}
+
+nav .link-glass{
+    color: black;
+}
+
+nav .link-subs{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 12px;
+    padding: 15px;
+    color:#fff;
+    border-bottom: 1px solid white;
+    transition: ease-out 0.3s;
+}
+
+nav .link-subs:hover{
+    color: black;
+    box-shadow: inset 130px 0 #fc0;
+}
+
+nav .link-renew{
+    letter-spacing: 2px;
+    color: black;
+    font-size: 13px;
+    font-weight: 400;
+    border-bottom: 2px solid #fc0;
+    background-image:-o-linear-gradient(330deg,#fc0 0,#fc0 100%);
+    background-image:linear-gradient(120deg,#fc0,#fc0);
+    background-position:0 100%;
+    background-repeat:no-repeat;
+    background-size:100% 0;
+    text-decoration:none;
+    -webkit-transition:background-size .125s ease-in;
+    -o-transition:background-size .125s ease-in;
+    transition:background-size .125s ease-in;
+}
+
+nav .link-renew:hover{
+    background-size:100% 100%;
+    background-position: 0 100%;
+}
+
+.link-glass,.link-renew,.link-menu, .blogo{
+    display: none;
+}
+
+.link-login{
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: black;
+    text-decoration: none;
+}
+
+.link-angels{
+    color: black;
+    text-decoration: none;
+}
+
+nav.link-menu{
+    font-size: 13px;
+}
+
+nav.menu a{
+    margin-right: 20px;
+}
+
+/*header*/
+
+header{
+    text-align: center;
+    height: 230px;
+}
+
+header h1{
+    font-size: 50px;
+    padding: 25px 0 15px 0;
+}
+
+header .line{
+    background-color: #ffcc00;
+    height: 4px;
+    line-height: 0;
+    margin: 21px auto 0;
+    width: 30px;
+}
+header span{
+    color: white;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.hdr-txt p{
+    font-weight: 100;
+}
+
+header span a{
+    border-bottom: 2px solid #fc0;
+    color: white;
+    font-weight: 400;
+    background-image:-o-linear-gradient(330deg,#fc0 0,#fc0 100%);
+    background-image:linear-gradient(120deg,#fc0,#fc0);
+    background-position:0 100%;
+    background-repeat:no-repeat;
+    background-size:100% 0;
+    text-decoration:none;
+    -webkit-transition:background-size .125s ease-in;
+    -o-transition:background-size .125s ease-in;
+    transition:background-size .125s ease-in;
+    color:#fff
+}
+
+header span a:hover{
+    color: black;
+    background-size:100% 100%;
+    background-position: 0 100%;
+}
+
+main .main-container{
+    width: 95%;
+    margin: 10px;
+}
+
+.main-news{
+    position: relative;
+    width: 95%;
+    padding: 10px;
+}
+
+.main-news-image{
+    height: 432px;
+    width: 422px;
+    padding: 10px;
+    margin-left: -10px;
+}
+
+.main-news-image img{
+    height: 100%;
+}
+
+.main-news-text{
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    font-weight: 400;
+}
+
+p.title{
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.secondary-news{
+    width: 422px;
+    height: 452px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.secondary-news-img{
+    height: 226px;
+}
+
+.secondary-news-img img{
+    max-height: 100%;
+    min-width: 100%;
+}
+
+.secondary-news-text{
+    height: 226px;
+    background-color: white;;
+    color: black;
+}
+
+.secondary-news-text h3{
+    padding-top: 15px;
+    padding-left: 15px;
+    color: grey;
+}
+
+.secondary-news-text p{
+    font-size: 24px;
+    font-weight: 700;
+    padding-left: 15px;
+}
+
+.secondary-news-text h4{
+    padding-left: 15px;
+    padding-bottom: 15px;
+    margin-top: 85px;
+}
+
+/*news section*/
+
+main.main-container{
+    width: 95%;
+    margin: 10px auto;
+}
+
+@media(min-width:768px){
+    
+    .frame{
+        display: none;
+    }
+
+    .link-glass,.link-renew,.link-menu, .blogo{
+        display: inline-block;
+    }
+
+    .link-glass{
+        
+    }
+
+    .links-container{
+        width: 430px;
+        float: right;
+    }
+
+    header .line{
+        background-color: #ffcc00;
+        height: 4px;
+        line-height: 0;
+        margin: 21px auto 0;
+        width: 60px;
+    }
+    
+    main.main-container{
+        display: flex;
+        flex-direction: row-reverse;
+        width:65%;
+        margin-left: 250px;
+    }
+
+    .main-news-image{
+        width: 666.667px;
+        height: 423px;
+    }
+
+    .main-news-text{
+        position: relative;
+        margin-top: -370px;
+        font-size: 50px;
+        max-width: 660px;
+    }
+
+    .secondary-news-container{
+        margin-top: 200px;
+        contain: content;
+        max-height: 400px;
+        display: flex;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+
+    .secondary-news{
+        max-height: 423px;
+        max-width: 314px;
+        padding-top: -20px;
+    }
+
+    .secondary-news-img{
+        height: 212px;
+        cursor: pointer;
+    }
+
+    .secondary-news-text{
+        contain: content;
+        min-height: 212px;
+        max-height: 145px;
+        display: grid;
+        cursor: pointer;
+    }
+
+    .secondary-news-text h3{
+        padding-top: 15px;
+        padding-left: 15px;
+    }
+
+    .secondary-news-text p{
+        padding: 0 15px;
+        font-size: 20px;
+    }
+
+    .secondary-news-text h4{
+        padding-left: 15px;
+        padding-bottom: 15px;
+        margin-top: -15px;
+    }
+
+    .todays-picks{
+        margin-top: -20px;
+        margin-left: -20px;
+    }
+
+    .todays-pick-item{
+        padding-bottom: 20px;
+        width: 313px;
+        height: 90px;
+        cursor: pointer;
+    }
+
+    .todays-pick-item img{
+        min-width: 90px;
+        min-height: 90px;
+        padding-right: 10px;
+    }
+}
+
+/*todays-picks*/
+
+.todays-picks{
+    padding-top: 20px;
+}
+
+.bar{
+    background-color: #ffcc00;
+    height: 30px;
+    width: 5px;
+    line-height: 0;
+    margin: 21px auto 0;
+    margin-left: 10px;
+    margin-bottom: -90px;
+}
+
+.todays-picks h1{
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-size: 40px;
+    padding-left: 50px;
+}
+
+.todays-pick-item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 10px;
+    margin: 10px 10px;
+    font-weight: 700;
+    margin-left: 10px;    
+}
+
+.todays-pick-item p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.todays-pick-item img{
+    height: 90px;
+    width: 90px;
+}
+
+.todays-pick-item h3{
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.type{
+    font-weight: 700;
+}
+
+.more{
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-top: 15px;
+    max-width: 80px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    border-bottom: 2px solid #fc0;
+    background-image:-o-linear-gradient(330deg,#fc0 0,#fc0 100%);
+    background-image:linear-gradient(120deg,#fc0,#fc0);
+    background-position:0 100%;
+    background-repeat:no-repeat;
+    background-size:100% 0;
+    text-decoration:none;
+    -webkit-transition:background-size .125s ease-in;
+    -o-transition:background-size .125s ease-in;
+    transition:background-size .125s ease-in;
+}
+
+.more:hover{
+    color: black;
+    background-size:100% 50%;
+    background-position: 0 100%;
+}
